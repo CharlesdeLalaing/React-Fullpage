@@ -95,17 +95,17 @@ function BasicFullPage() {
               <div
                 className="section"
                 data-anchor="section4"
-                style={{background: "orange", display: "flex", width: "100%", justifyContent:"space-between"}}
+                style={{background: "orange"}}
               >
-                  <NikeCard/>
-                  <NikeCard/>
-                <p>
                   <div className="slide" > 
+                  <NikeCard/>
                   </div>
-                  <div className="slide"> Slide 2 </div>
-                  <div className="slide"> Slide 3 </div>
-                  <div className="slide"> Slide 4 </div>
-                </p>
+                  <div className="slide">
+                  <NikeCard/> </div>
+                  <div className="slide"> 
+                  <NikeCard/> </div>
+                  <div className="slide">
+                  <NikeCard/> </div>
               </div>
               <div
                 className="section"
