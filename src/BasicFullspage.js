@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 
 import TypeWritter from './components/BIO/typeWritter'
+import NikeCard from './components/PROJECTS/nikeCard/index'
 
 
 import LogoWhite from './img/logoHectorWhite.png'
@@ -94,10 +95,12 @@ function BasicFullPage() {
               <div
                 className="section"
                 data-anchor="section4"
-                style={{background: "orange"}}
+                style={{background: "orange", display: "flex", width: "100%", justifyContent:"space-between"}}
               >
+                  <NikeCard/>
+                  <NikeCard/>
                 <p>
-                  <div className="slide"> 
+                  <div className="slide" > 
                   </div>
                   <div className="slide"> Slide 2 </div>
                   <div className="slide"> Slide 3 </div>
@@ -109,11 +112,6 @@ function BasicFullPage() {
                 data-anchor="section3"
                 style={{background: "orange"}}
               >
-                <p>Section 3</p>
-                <p>Section 3</p>
-                <p>Section 3</p>
-                <p>Section 3</p>
-                <p>Section 3</p>
               </div>
             </ReactFullpage.Wrapper>
           );

@@ -1,9 +1,9 @@
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import {AnimatePresence, motion, useMotionValue, useTransform} from "framer-motion"; 
 import React from "react";
 import styled from "styled-components";
 
-import AirJordanImg from "../../img/favpng_designer-clothing-dress-pattern.png";
-import { ShoesDetails } from "./shoeDetails";
+import AirJordanImg from "../../../img/Nike-Shoes-PNG-Image.png";
+import ShoesDetails from "./shoeDetails";
 
 const CardWrapper = styled.div`
   width: 100%;
@@ -108,7 +108,7 @@ const Shoes = styled(motion.div)`
   }
 `;
 
-export function NikeCard(props) {
+function NikeCard(props) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const rotateX = useTransform(y, [-100, 100], [30, -30]);
@@ -146,3 +146,5 @@ export function NikeCard(props) {
     </CardWrapper>
   );
 }
+
+export default NikeCard;

@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Marginer } from "../marginer";
 
-import NikeImg from "../../img/nike-logo-png-shoes-brand-17.png";
-
 const DetailsContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -70,18 +68,6 @@ const BuyButton = styled.button`
   }
 `;
 
-const NikeLogo = styled.div`
-  width: 100%;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  img {
-    width: auto;
-    height: 13px;
-  }
-`;
-
 const ColorBar = styled.div`
   width: 80%;
   height: 5px;
@@ -97,7 +83,7 @@ const TitleSection = styled.div`
   justify-content: around;
 `;
 
-export function ShoesDetails(props) {
+function ShoesDetails(props) {
   return (
     <DetailsContainer>
       <TitleSection>
@@ -117,3 +103,5 @@ export function ShoesDetails(props) {
     </DetailsContainer>
   );
 }
+
+export default ShoesDetails;
