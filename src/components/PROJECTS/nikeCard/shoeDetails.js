@@ -36,6 +36,7 @@ const SpacedHorizontalContainer = styled.div`
 
 const SpacedHorizontalContainer2 = styled.div`
   width: 100%;
+  align-items: center;
   display: flex;
   justify-content: space-between;
   text-align: left;

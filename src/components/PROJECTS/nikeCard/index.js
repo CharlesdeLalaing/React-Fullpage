@@ -17,6 +17,7 @@ const CardContainer = styled(motion.div)`
   width: 285px;
   height: 500px;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   border-radius: 25px;
   box-shadow: 0 2px 7px 1px rgba(31, 31, 31, 0.2);
@@ -59,7 +60,6 @@ const Circle = styled.div`
 `;
 
 const TopContainer = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   flex: 1.2;
@@ -129,7 +129,7 @@ function NikeCard(props) {
           </CircleWrapper>
           <ShoesWrapper>
             <Shoes
-              style={{ x, y, rotateX, rotateY, z: 100000 }}
+              style={{ x, y, rotateX, rotateY, z: 100000000 }}
               drag
               dragElastic={0.12}
               whileTap={{ cursor: "grabbing" }}

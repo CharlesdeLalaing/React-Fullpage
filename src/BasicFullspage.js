@@ -3,8 +3,9 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import styled from 'styled-components';
 
 
-import TypeWritter from './components/BIO/typeWritter'
-import NikeCard from './components/PROJECTS/nikeCard/index'
+import TypeWritter from './components/BIO/typeWritter';
+import NikeCard from './components/PROJECTS/nikeCard/index';
+import Main from './components/CONTACT/Main'
 
 
 import LogoWhite from './img/logoHectorWhite.png'
@@ -16,6 +17,14 @@ const StyledBtn = styled.button`
   background-color: transparent;
   font-size: 25px;
   cursor: pointer;
+`;
+
+const CardBox = styled.div`
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: auto;
 `;
 
 const Menu = ({
@@ -36,7 +45,7 @@ const Menu = ({
       justifyContent: "space-between"
     }}
   >
-    <img src={LogoWhite} width='180px' height='180px' style={{padding: "3em"}}></img>
+    <img src={LogoWhite} width='150px' height='150px' style={{padding: "1em"}}></img>
     <ul className="actions" style={{ 
       listStyle: "none", marginRight: "50px"
       }}>
@@ -57,15 +66,16 @@ const Footer = () => (
       position: "fixed",
       bottom: 0,
       zIndex: 100,
-      backgroundColor: "indigo",
+      backgroundColor: "transparent",
       width: "100%",
-      opacity: 0.7,
+      color: "white",
       display: "flex",
-      alignItems: "center",
-      justifyContent: "center"
+      padding:'1em',
+      alignItems: "left",
+      justifyContent: "left"
     }}
   >
-    Copyright {new Date().getFullYear()}
+    Copyright @ Hector.com 2022 by Digiiitall.com
   </div>
 );
 
@@ -95,23 +105,39 @@ function BasicFullPage() {
               <div
                 className="section"
                 data-anchor="section4"
-                style={{background: "orange"}}
+                style={{background: "black"}}
               >
-                  <div className="slide" > 
-                  <NikeCard/>
+                  <div className="slide" >
+                    <CardBox>
+                    <NikeCard/>
+                    <NikeCard/>
+                    </CardBox>
                   </div>
-                  <div className="slide">
-                  <NikeCard/> </div>
-                  <div className="slide"> 
-                  <NikeCard/> </div>
-                  <div className="slide">
-                  <NikeCard/> </div>
+                  <div className="slide" >
+                    <CardBox>
+                    <NikeCard/>
+                    <NikeCard/>
+                    </CardBox>
+                  </div>
+                  <div className="slide" >
+                    <CardBox>
+                    <NikeCard/>
+                    <NikeCard/>
+                    </CardBox>
+                  </div>
+                  <div className="slide" >
+                    <CardBox>
+                    <NikeCard/>
+                    <NikeCard/>
+                    </CardBox>
+                  </div>
               </div>
               <div
                 className="section"
                 data-anchor="section3"
-                style={{background: "orange"}}
+                style={{background: "black"}}
               >
+              <Main/>
               </div>
             </ReactFullpage.Wrapper>
           );

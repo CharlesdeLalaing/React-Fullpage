@@ -1,4 +1,5 @@
 import React from "react";
+import './app.css'
 // components
 import BasicFullspage from "./BasicFullspage";
 
