@@ -45,7 +45,7 @@ const Menu = ({
       justifyContent: "space-between"
     }}
   >
-    <img src={LogoWhite} width='150px' height='150px' style={{padding: "1em"}}></img>
+    <a href="/"><img src={LogoWhite} width='150px' height='150px' style={{padding: "1em"}}></img></a>
     <ul className="actions" style={{ 
       listStyle: "none", marginRight: "50px"
       }}>
