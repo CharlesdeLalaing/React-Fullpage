@@ -1,8 +1,9 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
+import styled from 'styled-components';
+
 
 import TypeWritter from './components/BIO/typeWritter'
-import styled from 'styled-components';
 
 
 import LogoWhite from './img/logoHectorWhite.png'
@@ -35,7 +36,7 @@ const Menu = ({
     }}
   >
     <img src={LogoWhite} width='180px' height='180px' style={{padding: "3em"}}></img>
-    <ul class="actions" style={{ 
+    <ul className="actions" style={{ 
       listStyle: "none", marginRight: "50px"
       }}>
       <li>
@@ -96,7 +97,8 @@ function BasicFullPage() {
                 style={{background: "orange"}}
               >
                 <p>
-                  <div className="slide"> Slide 1 </div>
+                  <div className="slide"> 
+                  </div>
                   <div className="slide"> Slide 2 </div>
                   <div className="slide"> Slide 3 </div>
                   <div className="slide"> Slide 4 </div>
